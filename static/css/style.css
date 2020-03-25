@@ -1,0 +1,44 @@
+body{
+	background-image: url('/static/images/monkey_nija_3.png');
+	background-size: cover;
+	background-attachment:scroll;
+
+}
+.header_back{
+	background-color: darkviolet;
+	color:white;
+	border-bottom: 25px solid violet;
+	border-bottom-right-radius:165px;
+	border-top-left-radius: 165px;
+	border-top: 25px solid violet;
+
+}
+.header_backer{
+	background-color: black;
+	border-top-left-radius: 100px;
+	border-bottom-right-radius:100px;
+}
+        .phara{
+            margin:5px;
+            padding:40px;
+            color: black;
+            font-size: 25px;
+        }
+        .input_file{
+
+            padding-left:38%;
+            margin-top:2px;
+        }
+        input[type='submit']{
+            width:300px;
+            height:40px;
+            color:white;
+            border-radius:15px;
+            border:4px solid violet;
+            background-color: darkviolet;
+
+        }
+.file{
+	padding-bottom: 24px;
+}
+
