@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+
+        body{
+        background-image: url('/static/images/monkey_nija_3.png');
+        }
+
+    </style>
+    <link rel="stylesheet" href="static/css/style.css" type="text/css" />
+    <meta charset="UTF-8">
+    <title>upload a image</title>
+
+</head>
+<body style="background-image: url('/static/images/monkey_nija_3.png');">
+    <header>
+
+    </header>
+    <div class="header_backer">
+
+    	<div class="header_back">
+    		<h1 style="padding: 1%;padding-left: 50px; "><img src="/static/images/ninja_zoom.png" width="75" height="75" ><b><i>Welcome to our NiNja iimage convertor...</i></b></h1>
+		</div>
+
+	</div>
+    <br/>
+    <div class="phara">
+        <p style="text-align:center; " ><b><i>we present you that an wounderful image convertor works with openCV(computer VIsion) technique that
+        convert your color image to gray image.<br>
+    </i></b></p>
+    </div>
+    <form action="/chance_image" method="POST" enctype="multipart/form-data">
+        <div class="input_file">
+            <div class="file">
+                <input type="file" name="file"><br/>
+            </div>
+                <input type="submit" value="convert">
+        </div>
+    </form>
+<div class="flask_result">
+
+        {% if upload_image_src %}
+                <p style="font-size:20px;"><b><i>user uploded image...</i></b></p>
+                <img src="{{ upload_image_src }}" width="450" height="350" style="padding-left:40%; padding-top: 30px; ">
+        {% endif %}
+
+        {% if image_src %}
+            <p style="font-size:20px;"><b><i>converted image.....</i></b></p>
+		    <img src="{{ image_src }}" width="450" height=350" style="padding-left:40%; padding-top: 30px; ">
+
+        {% endif %}
+</div>
+<hr/>
+<h1></h1>
+
+
+</body>
+</html>
